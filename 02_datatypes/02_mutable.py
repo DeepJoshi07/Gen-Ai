@@ -1,0 +1,7 @@
+games = set()
+games.add("mario")
+print(games)
+print(id(games))
+games.add("free-fire")
+print(games)
+print(id(games))
