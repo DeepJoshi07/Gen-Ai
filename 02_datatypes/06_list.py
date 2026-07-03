@@ -1,4 +1,5 @@
-# append(item), remove(item), insert(idx,item), extand, pop, reverse, sort, max, min
+# append(item), remove(item), insert(idx,item), extand, pop, 
+# reverse, sort, max, min
 
 ingredients = ["water","milk","black tea"]
 ingredients.append("suger")

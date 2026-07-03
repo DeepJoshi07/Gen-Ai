@@ -1,3 +1,10 @@
+# integer
+# arithmetic operations
+# logical operations [and, or, not]
+# (-), (+), (/), (//), (*), (**)
+# readability (_)
+# boolean (false -> None, "", 0), (true -> 1,2...n,"str", )
+
 fruits = 12
 sold = 5
 print("----- subtraction -----")
