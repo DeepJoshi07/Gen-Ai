@@ -1,5 +1,5 @@
 # for in range loop
-# works on any iterable arr,string.. etc.
+# works on any iterable arr, string, dictionary, set,.. etc.
 
 for token in range(1,11):
     # last number is not inclusive
@@ -25,3 +25,16 @@ random_dict = {
 for prop in random_dict:
     print(f"your key is : {prop}")
     print(f"your value is : {random_dict[prop]}")
+
+random_set = {1,2,3,4,5,6,7,8}
+
+for num in random_set:
+    print(num)
+
+for idx,name in enumerate(random_list,start=1):
+    print(f"rank {idx} : {name}")
+
+rupees = [100,90,80,70,60,50]
+
+for name,money in zip(random_list,rupees):
+    print(f"{name} paid {money} only.")
