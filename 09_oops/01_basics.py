@@ -7,10 +7,12 @@ class ChaiTime:
 print(type(Chai))
 
 new_chai = Chai()
+new_chai2 = ChaiTime()
 
 print(type(new_chai))
 print(type(new_chai) is Chai)
 print(type(new_chai) is ChaiTime)
+print(type(new_chai2) is ChaiTime)
 
 print("-----------------------------------")
 # adding values explicitly

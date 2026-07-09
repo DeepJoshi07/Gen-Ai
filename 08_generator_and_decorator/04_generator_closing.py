@@ -10,6 +10,7 @@ def foreign_chai():
 
 def all_chais_menu():
     yield from indian_chai()
+    print("------------")
     yield from foreign_chai()
 
 chais = all_chais_menu()

@@ -22,6 +22,11 @@ class ChaiOrder:
 
     def self_print(self):
         return(f"the chai you ordered is {self.type} and price is {self.price}")
+    
+lemon2 = ChaiOrder("lemon2",70)
+print(lemon2.self_print())
 
 lemon = ChaiOrder("lemon",50)
 print(lemon.self_print())
+
+print(lemon2.self_print())

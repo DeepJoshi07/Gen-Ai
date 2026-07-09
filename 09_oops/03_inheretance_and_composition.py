@@ -11,6 +11,9 @@ class Masala(Chai):
 
    def make_chai(self):
        return "making masala chai"
+   
+   def print_chai_type(self):
+       return f"your chai type is {self.type} and price is {self.price}"
 
 masala = Masala(45)
 
@@ -60,3 +63,4 @@ class FancyShop(ChaiShop):
 main_chai = FancyShop()
 print(main_chai.chai.make_chai())
 print(main_chai.chai.spices())
+print(main_chai.chai.type)
