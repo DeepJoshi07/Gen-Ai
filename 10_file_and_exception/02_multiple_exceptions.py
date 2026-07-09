@@ -1,3 +1,6 @@
+# operator overloading
+# like "string" * 5 = stringstringstringstringstring
+
 def process_order(item,qty):
     try:
         price = {"masala":20}[item]
