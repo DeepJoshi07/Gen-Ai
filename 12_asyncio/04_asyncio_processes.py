@@ -1,16 +1,13 @@
 import asyncio
-import time
 from concurrent.futures import ProcessPoolExecutor
 
-def check_stock(item):
-    print(f"checking stock for {item}.")
-    time.sleep(3)
-    return f"the stock for {item} is 42."
+def encrypt(item):
+    return item[::-1]
 
 async def main():
     loop = asyncio.get_running_loop()
     with ProcessPoolExecutor() as pool:
-        result = await loop.run_in_executor(pool,check_stock,"masala chai")
+        result = await loop.run_in_executor(pool,encrypt,"my_credit_card")
         print(result)
 
 asyncio.run(main())
