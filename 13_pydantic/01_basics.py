@@ -4,6 +4,7 @@ class User(BaseModel):
     name:str
     age:int
     height:int
+    is_heavy:bool = False
 
 
 user = {
@@ -13,5 +14,7 @@ user = {
 }
 
 my_user = User(**user)
+my_user2 = User(**user,is_heavy=True)
 
 print(my_user)
+print(my_user2)
