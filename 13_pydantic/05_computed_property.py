@@ -27,3 +27,4 @@ class Booking(BaseModel):
 b1 = Booking(id=123,room_id=456,nights=4, per_night_price=12000)
 print(b1)
 print(b1.model_dump())
+print(b1.model_dump_json())

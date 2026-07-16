@@ -13,4 +13,17 @@ async def main():
         result = await loop.run_in_executor(pool,check_stock,"masala chai")
         print(result)
 
+# async def main():
+#     loop = asyncio.get_running_loop()
+#     with ThreadPoolExecutor(max_workers=2) as pool:
+#         # Submit 3 tasks but only 2 threads available
+#         tasks = [
+#             loop.run_in_executor(pool, check_stock, "chai"),
+#             loop.run_in_executor(pool, check_stock, "coffee"),
+#             loop.run_in_executor(pool, check_stock, "sugar"),
+#         ]
+#         results = await asyncio.gather(*tasks)
+#         print(results)
+
+
 asyncio.run(main())

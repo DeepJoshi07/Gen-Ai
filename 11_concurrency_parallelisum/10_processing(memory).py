@@ -1,5 +1,5 @@
 from multiprocessing import Process,Value,Queue
-
+import time
 
 def increament(counter):
     print("counting started.")
@@ -13,7 +13,12 @@ if __name__ == "__main__":
 
     processes = [Process(target=increament,args=(counter,)) for _ in range(3)]
 
+    start = time.time()
+
     [p.start() for p in processes]
     [p.join() for p in processes]
 
+    end = time.time()
+
     print(counter.value)
+    print(f"total time taken is: {end-start:.2f}")

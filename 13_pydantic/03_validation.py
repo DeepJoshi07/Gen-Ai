@@ -1,4 +1,5 @@
-from pydantic import BaseModel,Field
+from pydantic import BaseModel,Field 
+from typing import Optional
 
 class Employee(BaseModel):
     id:int
@@ -13,8 +14,17 @@ class Employee(BaseModel):
         gt=17,
         lt=60
     )
-    salary = int = Field(
+    salary : int = Field(
         ...,
         gt=10000,
         description="salary must be more then 10,000."
     )
+    address: Optional[str] = Field(
+        default=None,
+        description="address must include street block no and zip."
+    )
+
+e1 = Employee(id=12,name="jayesh",age=23,salary=20000,address="nahi hai.")
+e2 = Employee(id=12,name="jayesh",age=23,salary=20000,)
+print(e1)
+print(e2)

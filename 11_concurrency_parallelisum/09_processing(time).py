@@ -1,5 +1,15 @@
-from multiprocessing import Process
+from multiprocessing import Process,Lock
 import time
+
+lock = Lock()
+
+# def cpu_havy():
+#     print("process has started.")
+#     with lock:
+#         total = 0
+#         for _ in range(10**8):
+#             total+=1
+#     print("Done.")
 
 def cpu_havy():
     print("process has started.")
